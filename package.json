@@ -18,12 +18,16 @@
     "url": "https://github.com/rtsao/selector-has/issues"
   },
   "devDependencies": {
+    "coveralls": "^2.11.4",
     "foreach": "^2.0.5",
+    "istanbul": "^0.3.18",
     "tap-spec": "^4.1.0",
     "tape": "^4.2.0"
   },
   "scripts": {
-    "test": "node test/index.js | tap-spec"
+    "test": "node test/index.js | tap-spec",
+    "cover": "istanbul cover --report lcov --print detail ./test/index.js",
+    "travis-test": "npm run cover && ((cat coverage/lcov.info | coveralls) || exit 0)"
   },
   "license": "MIT"
 }
