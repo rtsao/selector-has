@@ -1,0 +1,29 @@
+{
+  "name": "selector-has",
+  "version": "1.0.0",
+  "description": "A helper utility to check the presence of a class in a CSS selector",
+  "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
+  "main": "index.js",
+  "keywords": [
+    "css",
+    "selector",
+    "class"
+  ],
+  "homepage": "https://github.com/rtsao/selector-has",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtsao/selector-has.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rtsao/selector-has/issues"
+  },
+  "devDependencies": {
+    "foreach": "^2.0.5",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "test": "node test/index.js | tap-spec"
+  },
+  "license": "MIT"
+}
